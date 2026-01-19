@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Example</title>
+    <style>
+        .container {
+            width: 700px;
+            overflow: auto;
+        }
+
+        .box1 {
+            width: 200px;
+            height: 200px;
+            float: left;
+            margin: 10px;
+            padding: 10px;
+            border: 2px solid #333;
+            background-color: lightblue;
+        }
+
+        .box2 {
+            width: 200px;
+            height: 200px;
+            float: left;
+            margin: 10px;
+            padding: 20px;
+            border: 2px solid #333;
+            background-color: lightcoral;
+        }
+
+        .box3 {
+            width: 200px;
+            height: 200px;
+            float: left;
+            margin: 10px;
+            padding: 15px;
+            border: 2px solid #333;
+            background-color: lightgreen;
+        }
+
+        .box4 {
+            width: 200px;
+            height: 200px;
+            float: left;
+            margin: 10px;
+            padding: 15px;
+            border: 2px solid #333;
+            background-color: lightyellow;
+        }
+
+        .childDiv {
+            width: 100px;
+            height: 100px;
+            margin: 10px auto;
+            padding: 5px;
+            border: 2px solid #000;
+            text-align: center;
+        }
+
+        .box1 .childDiv {
+            background-color: lightyellow;
+        }
+
+        .box2 .childDiv {
+            background-color: lightblue;
+        }
+
+        .box3 .childDiv {
+            background-color: lightcoral;
+        }
+
+        .box4 .childDiv {
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h2>Create Webpage</h2>
+    </div>
+
+    <div class="container">
+        <div class="box1">
+            <h3>Box 1</h3>
+            <p>Margin: 10px</p>
+            <div class="childDiv">
+                <p>Child 1</p>
+            </div>
+        </div>
+
+        <div class="box2">
+            <h3>Box 2</h3>
+            <p>Margin: 10px</p>
+            <div class="childDiv">
+                <p>Child 2</p>
+            </div>
+        </div>
+
+        <div class="box3">
+            <h3>Box 3</h3>
+            <p>Margin: 10px</p>
+            <div class="childDiv">
+                <p>Child 3</p>
+            </div>
+        </div>
+
+        <div class="box4">
+            <h3>Box 4</h3>
+            <p>Margin: 10px</p>
+            <div class="childDiv">
+                <p>Child 4</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

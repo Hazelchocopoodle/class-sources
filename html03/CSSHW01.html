@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid 3x2</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            padding: 2vh;
+        }
+
+        .container {
+            width: 100%;
+            overflow: auto;
+        }
+
+        .box {
+            /*수업 중에 container의 픽셀 사이즈로 박스가 2x2정렬이 안돼서 viewport 사이즈의 %로 설정해달라고 했습니다*/
+            width: 28vw;
+            height: 40vh;
+            float: left;
+            margin: 1.5vw;
+            padding: 2vh;
+            border: 2px solid #333;
+        }
+
+        .box1 {
+            background-color: #FFB6C1;
+        }
+
+        .box2 {
+            background-color: #87CEEB;
+        }
+
+        .box3 {
+            background-color: #98FB98;
+        }
+
+        .box4 {
+            background-color: #FFD700;
+        }
+
+        .box5 {
+            background-color: #DDA0DD;
+        }
+
+        .box6 {
+            background-color: #FFA07A;
+        }
+        /*제목 가운데 정렬을 요청했는데 여기에 추가가 되었어요.. 혹시 <h2></h2>에 들어가야 되는거 아닌가요?*/
+        h2 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h2>Create Webpage</h2>
+    </div>
+
+    <div class="container">
+        <div class="box box1">
+            <h3>Box 1</h3>
+        </div>
+
+        <div class="box box2">
+            <h3>Box 2</h3>
+        </div>
+
+        <div class="box box3">
+            <h3>Box 3</h3>
+        </div>
+
+        <div class="box box4">
+            <h3>Box 4</h3>
+        </div>
+
+        <div class="box box5">
+            <h3>Box 5</h3>
+        </div>
+
+        <div class="box box6">
+            <h3>Box 6</h3>
+        </div>
+    </div>
+</body>
+</html>

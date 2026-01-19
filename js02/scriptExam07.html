@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+        .canvas {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            align-content: flex-start;
+            width: 400px;
+            height: 600px;
+            border: 1px solid;
+        }
+        .item {
+            width: 50px;
+            height: 50px;
+            background-color: brown;
+        }
+    </style>
+<body>
+    
+</body>
+<div class="canvas" id="canvas"></div>
+<div>
+    <label for="count">Count</label>
+    <input type="number" id="count" name="count">
+    <button type="button" onclick="makeBox()">Create</button>"
+
+</div>
+<script>
+
+    const makeBox = () => {
+        const count = document.querySelector('#count').value;
+        const countVal = Number(count); // 문자형 숫자 -> 숫자로 바꾸고
+        /* 자바스크립트의 equal 기호
+          == 는 타입상관 없이 값만 동일하면 됨
+          1 == '1' (true)
+          === 는 값과 타입 모두 일치해야 됨
+          1 === '1' (false) */
+        if( !countVal || count <= 0) {
+            alert ('Enter count')
+            return; // 함수종료 > early return pattern
+        }
+
+        const canvas = document.querySelector('#canvas')
+        
+        for(let i = 0; i < count ; i++){
+            const div = document.createElement('div');
+            div.className = 'item'
+            canvas.append(div);
+        }
+    }
+</script>
+</html>

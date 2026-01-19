@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retro Blog</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            padding: 2vh;
+        }
+
+        .container {
+            width: 100%;
+            overflow: auto;
+        }
+
+        .row1 {
+            width: 100%;
+            overflow: auto;
+            margin-bottom: 2vh;
+        }
+/*top-box에 float left가 귀속돼서 box1, 2는 알아서 적용이되는건가요?*/
+        .top-box {
+            width: 100vw;
+            height: 20vh;
+            float: left;
+            margin: 1.5vw;
+            padding: 2vh;
+            border: 2px solid #333;
+        }
+
+        .box1 {
+            background-color: #FFB6C1;
+            height: 12vh
+        }
+
+        .box2 {
+            background-color: #87CEEB;
+            height: 30vh;
+        }
+
+        .box3 {
+            background-color: #98FB98;
+            width: 43vw;
+            height: 30vh;
+            float: left;
+        }
+        .box4 {
+            background-color: #d9e14f;
+            width: 43vw;
+            height: 30vh;
+/*여기에는 padding도 없는데 float right를 했음에도 불구하고 오른쪽 정렬이 깔끔하게 안됩니다*/
+            float: right;
+        }
+
+        .childDiv {
+            width: 30%;
+            height: 5vh;
+            float: left;
+            margin: 1%;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0);
+            border: 2px solid #333;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+   <div>
+    <h2 style="text-align: center;">Retro Blog</h2>
+    </div>  
+    <div class="container">
+        <!-- First Row with 3 boxes -->
+        <div class="row1">
+            <div class="top-box box1">
+                <div class="childDiv">
+                    <p>Post 1</p>
+                </div>
+                <div class="childDiv">
+                    <p>Post 2</p>
+                </div>
+                <div class="childDiv">
+                    <p>Post 3</p>
+                </div>
+            </div>
+
+            <div class="top-box box2">
+                <h3>Main</h3>
+            </div>
+        <!-- Bottom Row -->
+            <div class="top-box box3">
+                <h3>About</h3>
+            </div>
+            <div class="top-box box4">
+                <h3>Socials</h3>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

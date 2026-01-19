@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>결과: <span id="type"></span></p>
+    <input type="number" id="score" placeholder="Enter Score" autocomplete="off">
+    <button type="button" onclick="getResult()">Result</button>
+</body>
+<script> 
+
+    const getResult = ()=> {
+        let type = '';
+
+        const score = document.querySelector('#score').value;
+
+        if(score >= 65) {
+            type = 'Pass' ;
+        }else {
+            type = 'Fail';
+        }
+
+        const spanType  = document.querySelector('#type');
+
+
+        spanType.textContent = type;
+
+
+    }
+    
+</script>
+</html>

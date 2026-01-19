@@ -1,0 +1,44 @@
+#환경 설정파일
+.env
+.mcp.json
+.mcp*.json
+
+# Gradle
+build/
+.gradle/
+
+#의존성 
+node_modules/
+
+# 컴파일된 파일
+*.class
+*.jar
+*.war
+*.ear
+
+# 로그
+*.log
+logs/
+
+# 임시 파일
+*.tmp
+*.temp
+*.swp
+*.bak
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Eclipse
+.project
+.classpath
+.settings/
+
+# VS Code
+.vscode/
+
+# NetBeans
+nbproject/

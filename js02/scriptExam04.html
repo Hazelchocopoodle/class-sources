@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>요금: <span id="fee"></span></p>
+    <p>대상: <span id="type""></span></p>
+    <input type="number" id="age" placeholder="Enter Age" autocomplete="off">
+    <button type="button" onclick="calculateFee()">Calculate</button>
+</body>
+<script> 
+    //일반 함수 (생성 시 메모리 등록): 공통함수
+    function getFee(){
+
+    }
+    //익명 함수(실행할 떄 메모리 등록): 이벤트 처리, 콜백용
+    const getFee = function(){
+
+    }
+    //화살표 함수 > 익명함술르 단축형으로 줄인 것
+    const getFee = () => {
+
+    }
+    //중괄호 생략 가능 
+    const getFee = () => console.log('Hi');
+    //선언부에 매개변수가 1개만 있을 경우 소괄호를 생략 가능
+    const getFee = fee => console.log(fee);
+    //body에 코드가 return이 있는 한줄인 경우 중괄호 + 리턴 같이 생략 가능
+    const getFee = (fee) => fee;
+</script>
+</html>
