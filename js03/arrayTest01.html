@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+    //배열은 일반변수랑 다름
+    /* 일반변수(primitive variable)는 하나의 값을 지정
+    a = 10; 지정받음
+    b = a; b가 a가 가진 값을 지정 받음
+    b = b+10;
+    b = 20, a= 10;
+    일반적인 값은 불변 
+    값 자체를 변경 할 수 없음
+    b+10하면 새로운 20이 생기고 b에 지정됨 
+    
+    객체들은 공간이 필요 > 집이 있음, 여러개를 한번에 저장
+    객체 또는 클래스 정보 + 기능
+    공간 > 저장할 장소 > 안바뀜 
+    
+    객체의 대입은 주소를 이전 하는 것 > 얕은 복사
+
+    곧 객체의 대입은 객체 자체를 변경하는 것이기 떄문에
+    내용은 변경되어도 되지만 객체는 변경되지 않도록
+    const 키워드로 선언하는게 일바적
+    */
+
+    //배열선언
+    const arr01 = [];
+    const arr02 = new Array();
+    const arr03 = [1,2,3,4,5];
+
+    //대입
+    arr01.push(1);
+    arr01.push(2);
+    arr01.push(3);
+    arr01.push(4);
+
+    for(let i = 1; i <= 10; i++) {
+      arr02.push(i);
+      // 비추  >  arr02[i-1] = i;  
+   }
+
+   // 출력
+   for(let i = 0; i < 10; i++) {
+       console.log( arr02[i]);
+   }
+
+    // 자바스크립트 객체 
+   //클래스 중 하나 > 리터럴 클래스(데이터만 있는 클래스 )
+   // 보통 서버에 데이터 넘길 때 
+   const data = {};
+   /*
+     {
+       key : value,
+       key : value,...
+      }
+   */ 
+    
+    //삽입 
+    data.name = '송유진';
+    data['age']=300;
+    console.log(data);
+
+
+</script>
+</html>
