@@ -68,7 +68,7 @@
             for (let i = 0; i < 5; i++) { /*5개 카드 랜덤하게 나오도록*/
                 const card = document.createElement("div");
                 card.className = "card";
-                const randomNum = Math.floor(Math.random() * 10);
+                const randomNum = Math.floor(Math.random() * 10); /*1~10으로 하려면 *10)+1; */
                 card.textContent = randomNum;
                 card.style.backgroundColor = colors[randomNum];
                 container.appendChild(card);

@@ -1,7 +1,5 @@
 #환경 설정파일
 .env
-.mcp.json
-.mcp*.json
 
 # Gradle
 build/
@@ -42,3 +40,8 @@ logs/
 
 # NetBeans
 nbproject/
+
+#claude 개인환경 파일 제외
+.claude/settings.local.json
+.mcp.json
+test.txt

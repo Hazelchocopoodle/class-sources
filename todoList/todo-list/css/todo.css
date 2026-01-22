@@ -1,0 +1,146 @@
+/* 전체 배경 */
+body {
+    background-color: #FFFEF5;
+    min-height: 100vh;
+}
+
+/* 컨테이너 */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* 제목 */
+.title {
+    margin-top: 5vh;
+    margin-bottom: 30px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* 입력 영역 */
+.input-area {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.input-area #todoInput {
+    flex: 2;
+}
+
+.input-area #dueDateInput {
+    flex: 1;
+}
+
+.input-area .btn {
+    white-space: nowrap;
+}
+
+/* 일괄 버튼 영역 */
+.batch-buttons {
+    margin-bottom: 20px;
+}
+
+/* 할일 리스트 컨테이너 */
+.todo-list-container {
+    max-width: 700px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* 헤더 */
+.todo-header {
+    background-color: #f8f9fa;
+    font-size: 14px;
+}
+
+/* 컬럼 너비 설정 */
+.check-col {
+    width: 40px;
+    text-align: center;
+}
+
+.task-col {
+    flex: 2;
+    padding: 0 10px;
+}
+
+.date-col {
+    width: 100px;
+    text-align: center;
+}
+
+.dday-col {
+    width: 80px;
+    text-align: center;
+}
+
+.action-col {
+    width: 120px;
+    text-align: center;
+}
+
+/* 할일 목록 - 스크롤 설정 (10개 기준 약 500px) */
+.todo-list {
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+/* 할일 아이템 */
+.todo-item {
+    display: flex;
+    align-items: center;
+    padding: 12px 8px;
+    border-bottom: 1px solid #eee;
+    transition: background-color 0.2s;
+}
+
+.todo-item:hover {
+    background-color: #f8f9fa;
+}
+
+/* 완료된 항목 스타일 */
+.todo-item.completed .task-col {
+    text-decoration: line-through;
+    color: #999;
+}
+
+/* 체크박스 */
+.todo-item .form-check-input {
+    cursor: pointer;
+}
+
+/* D-Day 스타일 */
+.dday-col span {
+    font-weight: bold;
+}
+
+.dday-col .dday-passed {
+    color: #dc3545;
+}
+
+.dday-col .dday-today {
+    color: #28a745;
+}
+
+.dday-col .dday-future {
+    color: #007bff;
+}
+
+/* 버튼 */
+.btn-action {
+    padding: 4px 8px;
+    font-size: 12px;
+    margin: 0 2px;
+}
+
+/* 빈 목록 메시지 */
+.empty-message {
+    text-align: center;
+    padding: 40px;
+    color: #999;
+}

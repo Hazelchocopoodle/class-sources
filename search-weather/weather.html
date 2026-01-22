@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>날씨 검색</title>
+    <link rel="stylesheet" href="css/weather.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>날씨 검색</h1>
+        </header>
+
+        <main>
+            <div class="search-box">
+                <input
+                    type="text"
+                    id="cityInput"
+                    placeholder="도시명을 입력하세요"
+                    autocomplete="off"
+                >
+                <button id="searchBtn">검색</button>
+            </div>
+
+            <div id="weatherResult" class="weather-result hidden">
+                <div class="weather-icon">
+                    <img id="weatherIcon" src="" alt="날씨 아이콘">
+                </div>
+                <div class="weather-info">
+                    <h2 id="cityName"></h2>
+                    <p class="temperature"><span id="temp"></span>°C</p>
+                    <p class="description" id="description"></p>
+                </div>
+            </div>
+
+            <div id="errorMessage" class="error-message hidden">
+                <p>검색 결과를 찾을 수 없습니다.</p>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/weather.js"></script>
+</body>
+</html>

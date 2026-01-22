@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button type="button" id="ckBtn">Click</button>
+    
+</body>
+<script>
+
+    const hello = () => {
+        alert('Hi!!');
+    }
+
+    hello(); //함수의 실행
+
+    const btn = document.querySelector('#ckBtn')
+    /*button에 onclick 이벤트 부여; Click event를 감시함*/
+    /* 함수에서 a();는 기본적으로 호출을 의미
+    콜백함수로 함수를 인자로 넘길 때 이름만 전달 > ()붙이면 바로 실행되기 때문 
+    그러나 매개변수로 전달해야될 때는 a(say)처럼 붙여야하는데, 이는 함수가 실행됨
+    그래서 콜백으로 인자가 있는 함수를 넘길 때는 다른 콜백함수로 감싸서 처리함
+    ()=> hello('안녕'); */
+    // btn.addEventListener('click', hello); //함수의 이름을 전달
+    btn.addEventListener('click', () => alert('Hi!!'));
+
+</script>
+</html>
